@@ -7,11 +7,14 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-pre_req_vault = "DBoobRVqT7PaAhq8obqo95723CHyWvcCLRUKvQ5wYWE4"
+pre_req_vault = "EuJjhbxfji6EVUNXmCRnDRY3KTQn4d75BreazFt5xTmD"
+
+[programs.devnet]
+pre_req_vault = "EuJjhbxfji6EVUNXmCRnDRY3KTQn4d75BreazFt5xTmD"
 
 [provider]
 cluster = "devnet"
-wallet = "~/.config/solana/id.json"
+wallet = "/home/frank/.config/solana/capstone.json"
 
 [scripts]
 test = "pnpm exec ts-mocha -p ./tsconfig.json -t 1000000 \"tests/**/*.ts\""
